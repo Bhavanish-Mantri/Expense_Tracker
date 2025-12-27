@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="app-title">Expense Tracker</h1>
+
+    <div class="header">
+      <img src="https://i.ibb.co/jfScDTC/budget.png" alt="Budget" />
+      <div>
+        <h2>Your Balance</h2>
+        <h2 id="balance">₹0.00</h2>
+      </div>
+    </div>
+
+    <div class="inc-exp-container">
+      <div>
+        <h4>Income</h4>
+        <p id="money-plus" class="plus">₹0.00</p>
+      </div>
+      <div>
+        <h4>Expense</h4>
+        <p id="money-minus" class="minus">₹0.00</p>
+      </div>
+    </div>
+
+    <h3>History</h3>
+    <ul id="list"></ul>
+
+    <h3>Add Transaction</h3>
+
+    <label>Description</label>
+    <input id="text" type="text" placeholder="Enter description" />
+
+    <label>Amount</label>
+    <input id="amount" type="number" placeholder="Enter amount" />
+
+    <div class="type-toggle">
+      <button id="incomeBtn" type="button" class="active">Income</button>
+      <button id="expenseBtn" type="button">Expense</button>
+    </div>
+
+    <button id="addBtn" type="button" class="btn">
+      Add Transaction
+    </button>
+  </div>
+
+  <div id="notification" class="notification">
+    Please enter valid details
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

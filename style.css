@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 380px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 70px;
+}
+
+.inc-exp-container {
+  display: flex;
+  margin: 20px 0;
+  background: #f9fafb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.inc-exp-container div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container div:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.plus {
+  color: green;
+  font-weight: bold;
+}
+
+.minus {
+  color: red;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f9fafb;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+.type-toggle {
+  display: flex;
+  margin: 12px 0;
+}
+
+.type-toggle button {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.type-toggle .active {
+  background: #1f2937;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #1f2937;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.notification.show {
+  opacity: 1;
+}
+
